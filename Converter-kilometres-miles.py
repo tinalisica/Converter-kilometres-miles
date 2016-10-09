@@ -22,12 +22,12 @@ answer=1
 while True:
 
 
-    answer = raw_input("Do you want another conversion? Yes/No")
-    if answer == "No":
+    answer = raw_input("Do you want another conversion? Yes/No").lower()
+    if answer == "no":
         print "Thank you and bye bye."
         break
 
-    elif answer == "Yes":
+    elif answer == "yes":
         kilometres = int(raw_input("Number of kilometres:"))
         miles = kilometres * 0.621371192
         print "This is %s miles." % miles
